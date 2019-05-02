@@ -26,11 +26,12 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
+
 <div class="wrap">
     <?php
     NavBar::begin([
         'brandLabel' => "Новостной портал",
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandUrl' => ['user/index'],
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -52,6 +53,7 @@ AppAsset::register($this);
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
+
 </div>
 
 <footer class="footer">
