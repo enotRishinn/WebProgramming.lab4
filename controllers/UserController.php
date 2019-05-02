@@ -13,4 +13,12 @@ class UserController extends Controller {
   public function actionAdmin() {
     return $this->render('admin');
   }
+
+  public function actionAdd() {
+    return $this->render('add');
+  }
+
+  public function actionDelete() {
+    return $this->render('delete');
+  }
 }

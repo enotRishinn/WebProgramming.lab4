@@ -122,6 +122,10 @@ background-color: black;
   background-color: #333333 !important;
 }
 
-.nav-pills > li > a:hover, .nav-pills > li > a:active{
+.nav-pills > li > a:hover{
+  background-color: black !important;
+}
+
+#choose > a {
   background-color: black !important;
 }
