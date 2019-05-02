@@ -113,3 +113,15 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.black {
+background-color: black;
+}
+
+.nav-pills > li > a {
+  background-color: #333333 !important;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:active{
+  background-color: black !important;
+}
