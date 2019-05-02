@@ -38,7 +38,8 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Аккаунт админа', 'url' => ['/user/admin']]
+            ['label' => 'Аккаунт админа', 'url' => ['/user/admin']],
+            ['label' => 'Аккаунт пользователя', 'url' => ['/user/index']]
         ],
     ]);
     NavBar::end();
