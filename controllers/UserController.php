@@ -4,16 +4,21 @@ namespace app\controllers;
 
 use yii\web\Controller;
 use app\models\AddForm;
+use app\models\Category;
 use Yii;
 
 class UserController extends Controller {
 
   public function actionIndex() {
-    return $this->render('index');
+    $cats = Category::find()->all();
+
+    return $this->render('index', compact('cats'));
   }
 
   public function actionAdmin() {
-    return $this->render('admin');
+    $cats = Category::find()->all();
+
+    return $this->render('admin', compact('cats'));
   }
 
   public function actionAdd() {

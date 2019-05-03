@@ -7,7 +7,12 @@ use yii\helpers\Html;
     <ul class="nav nav-pills">
       <li role="presentation" class="active" id="choose"><?= Html::a('Новости', ['user/admin']) ?></li>
       <li role="presentation" class="active" ><?= Html::a('Добавление новостей', ['user/add']) ?></li>
-      <li role="presentation" class="active" ><?= Html::a('Удаление новостей', ['user/delete']) ?></li>
+      <li role="presentation" class="active" ><?= Html::a('Редактирование и удаление новостей', ['user/delete']) ?></li>
     </ul>
   </div>
 </div>
+
+<?php foreach ($cats as $cat) {
+  echo '<h1>'.$cat->title.'<br></h1>';
+  echo '<h3>'.$cat->text.'<br></h3><br><br>';
+} ?>

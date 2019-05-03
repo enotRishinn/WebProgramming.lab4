@@ -7,7 +7,7 @@ use yii\helpers\Html;
     <ul class="nav nav-pills">
       <li role="presentation" class="active" ><?= Html::a('Новости', ['user/admin']) ?></li>
       <li role="presentation" class="active" ><?= Html::a('Добавление новостей', ['user/add']) ?></li>
-      <li role="presentation" class="active" id="choose" ><?= Html::a('Удаление новостей', ['user/delete']) ?></li>
+      <li role="presentation" class="active" id="choose" ><?= Html::a('Редактирование и удаление новостей', ['user/delete']) ?></li>
     </ul>
   </div>
 </div>
