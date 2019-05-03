@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 ?>
 
 <div class="wrap">
@@ -11,3 +12,9 @@ use yii\helpers\Html;
     </ul>
   </div>
 </div>
+
+<?php $form = ActiveForm::begin() ?>
+<?= $form->field($model, 'title')  ?>
+<?= $form->field($model, 'text')  ?>
+<?= Html::submitButton('Добавить', ['class' => 'btn btn-success']) ?>
+<?php ActiveForm::end() ?>

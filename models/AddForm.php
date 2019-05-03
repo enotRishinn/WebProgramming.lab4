@@ -4,7 +4,7 @@ namespace app\models;
 
 use yii\base\Model;
 
-class PostForm extends Model {
+class AddForm extends Model {
   public $title;
   public $text;
 }

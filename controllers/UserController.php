@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use yii\web\Controller;
+use app\models\AddForm;
 
 class UserController extends Controller {
 
@@ -15,7 +16,9 @@ class UserController extends Controller {
   }
 
   public function actionAdd() {
-    return $this->render('add');
+
+    $model = new AddForm();
+    return $this->render('add', compact('model'));
   }
 
   public function actionDelete() {
