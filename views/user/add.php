@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 </div>
 
 <?php $form = ActiveForm::begin() ?>
-<?= $form->field($model, 'title')  ?>
-<?= $form->field($model, 'text')  ?>
-<?= Html::submitButton('Добавить', ['class' => 'btn btn-success']) ?>
+<?= $form->field($model, 'title') ?>
+<?= $form->field($model, 'text')->textarea(['rows' => 7]) ?>
+<?= Html::submitButton('Добавить', ['class' => 'btn btn-primary']) ?>
 <?php ActiveForm::end() ?>
