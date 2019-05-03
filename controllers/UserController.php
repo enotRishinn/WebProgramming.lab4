@@ -35,8 +35,4 @@ class UserController extends Controller {
     }
     return $this->render('add', compact('model'));
   }
-
-  public function actionDelete() {
-    return $this->render('delete');
-  }
 }
