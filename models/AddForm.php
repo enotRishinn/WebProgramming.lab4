@@ -2,11 +2,13 @@
 
 namespace app\models;
 
-use yii\base\Model;
+use yii\db\ActiveRecord;
 
-class AddForm extends Model {
-  public $title;
-  public $text;
+class AddForm extends ActiveRecord {
+
+  public static function tableName() {
+    return 'post';
+  }
 
   public function attributeLabels() {
     return [

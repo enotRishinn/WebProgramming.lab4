@@ -24,8 +24,9 @@ class UserController extends Controller {
   public function actionAdd() {
 
     $model = new AddForm();
+
     if ($model->load(Yii::$app->request->post())) {
-      if ($model->validate()) {
+      if ($model->save()) {
         Yii::$app->session->setFlash('success', 'Новость добавлена');
         return $this->refresh();
       } else {
