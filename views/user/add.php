@@ -3,15 +3,13 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 ?>
 
-<div class="wrap">
-  <div class="container">
+<div class="wrap" ><br><br>
     <ul class="nav nav-pills">
       <li role="presentation" class="active" ><?= Html::a('Новости', ['user/admin']) ?></li>
       <li role="presentation" class="active" id="choose" ><?= Html::a('Добавление новостей', ['user/add']) ?></li>
       <li role="presentation" class="active" ><?= Html::a('Редактирование и удаление новостей', ['post/index']) ?></li>
     </ul>
-  </div>
-</div>
+</div><br><br>
 
 <?php if (Yii::$app->session->hasFlash('success')): ?>
   <div class="alert alert-success alert-dismissible fade show" role="alert">
